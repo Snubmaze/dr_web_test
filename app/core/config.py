@@ -10,7 +10,7 @@ class Settings:
     def database_url(self) -> str:
         return (
             f"postgresql+asyncpg://{self.POSTGRES_USER}:{self.POSTGRES_PASSWORD}"
-            f"@{self.POSTGRES_HOST}:{self.POSTGRES_PORT}/{self.POSTGRES_DB}"
+            f"@localhost:5435/{self.POSTGRES_DB}"
         )
 
 
